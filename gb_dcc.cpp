@@ -131,17 +131,17 @@ gb_dcc::~gb_dcc()
 #define DCC_STOP_CMND 0x40
 
 // ab hier neu
-void gb_dcc::loc1_spB_slot(unsigned int nr)
+void gb_dcc::loc1_spB_slot(int nr)
 {
   loc_nr1 = nr;
 }
 
-void gb_dcc::loc2_spB_slot(unsigned int nr)
+void gb_dcc::loc2_spB_slot(int nr)
 {
   loc_nr2 = nr;
 }
 
-void gb_dcc::loc3_spB_slot(unsigned int nr)
+void gb_dcc::loc3_spB_slot(int nr)
 {
   loc_nr3 = nr;
 }

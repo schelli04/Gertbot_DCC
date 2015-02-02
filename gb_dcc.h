@@ -49,9 +49,9 @@ private:
     void dcc_config(unsigned char,unsigned char,unsigned char);
 
 public slots:
-  void loc1_spB_slot(unsigned int nr);
-  void loc2_spB_slot(unsigned int nr);
-  void loc3_spB_slot(unsigned int nr);
+  void loc1_spB_slot(int nr);
+  void loc2_spB_slot(int nr);
+  void loc3_spB_slot(int nr);
   void loc1_slide_slot(int v);
   void loc2_slide_slot(int v);
   void loc3_slide_slot(int v);
