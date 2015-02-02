@@ -276,6 +276,7 @@ void gb_dcc::send_2byte_command(unsigned char b1,unsigned char b2)
   message[9] = CMD_STOP_VAL; // End of Message, comes from gertbot_defines.h 
   // Send message out
   write_uart(message,10);
+  ui.te_log->appendPlainText(message);
 } // send_2byte_command
 
 //

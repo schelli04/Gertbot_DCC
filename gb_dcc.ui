@@ -685,6 +685,16 @@
      </item>
     </layout>
    </widget>
+   <widget class="QPlainTextEdit" name="te_log">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>10</y>
+      <width>261</width>
+      <height>221</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
