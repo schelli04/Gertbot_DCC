@@ -18,6 +18,8 @@
 
 bool uart_opened;
 
+bool chn0 = true, chn1 = true, chn2 = true, chn3 = true;
+
 unsigned int loc_nr1 = 1, loc_nr2 = 2, loc_nr3 = 3;
 
 gb_dcc::gb_dcc(QWidget *parent, Qt::WFlags flags)
@@ -81,10 +83,15 @@ gb_dcc::gb_dcc(QWidget *parent, Qt::WFlags flags)
   connect(ui.pb_Stop_loc2 ,SIGNAL(clicked(bool)), this, SLOT(loc2_stop_slot()));
   connect(ui.pb_Stop_loc3 ,SIGNAL(clicked(bool)), this, SLOT(loc3_stop_slot()));
   
-  connect(ui.spB_loco1 ,SIGNAL(valueChanged(int)), this, SLOT(loc1_spB_slot(int)));  // neu
-  connect(ui.spB_loco2 ,SIGNAL(valueChanged(int)), this, SLOT(loc2_spB_slot(int)));  // neu
-  connect(ui.spB_loco3 ,SIGNAL(valueChanged(int)), this, SLOT(loc3_spB_slot(int)));  // neu
-
+  connect(ui.spB_loco1 ,SIGNAL(valueChanged(int)), this, SLOT(loc1_spB_slot(int)));  
+  connect(ui.spB_loco2 ,SIGNAL(valueChanged(int)), this, SLOT(loc2_spB_slot(int)));  
+  connect(ui.spB_loco3 ,SIGNAL(valueChanged(int)), this, SLOT(loc3_spB_slot(int)));
+  
+  // connect(ui.chkBx_Chn0, SIGNAL(valueChanged()), this, SLOT(chn_chkBx_slot()));
+  // connect(ui.chkBx_Chn1, SIGNAL(valueChanged()), this, SLOT(chn_chkBx_slot()));
+  // connect(ui.chkBx_Chn3, SIGNAL(valueChanged()), this, SLOT(chn_chkBx_slot()));
+  // connect(ui.chkBx_Chn2, SIGNAL(valueChanged()), this, SLOT(chn_chkBx_slot()));
+  
   connect(ui.sld_loc1,SIGNAL(valueChanged(int)), this, SLOT(loc1_slide_slot(int)));
   connect(ui.sld_loc2,SIGNAL(valueChanged(int)), this, SLOT(loc2_slide_slot(int)));
   connect(ui.sld_loc3,SIGNAL(valueChanged(int)), this, SLOT(loc3_slide_slot(int)));
@@ -127,7 +134,6 @@ gb_dcc::~gb_dcc()
 //
 // Send STOP command to decoder
 //
-#define LOC1  3 // Loc1 has address 3
 #define DCC_STOP_CMND 0x40
 
 // ab hier neu
@@ -146,8 +152,6 @@ void gb_dcc::loc3_spB_slot(int nr)
   loc_nr3 = nr;
 }
 
-// bis hier neu
-
 
 void gb_dcc::loc1_stop_slot()
 { 
@@ -156,14 +160,12 @@ void gb_dcc::loc1_stop_slot()
   ui.sld_loc1->setValue(0);
 } // loc1_stop_slot
 
-#define LOC2  2 // Loc2 has address 2
 void gb_dcc::loc2_stop_slot()
 { send_2byte_command(loc_nr2,DCC_STOP_CMND);
   // Set slider back to the middle
   ui.sld_loc2->setValue(0);
 } // loc2_stop_slot
 
-#define LOC3  8 // Loc3 has address 8
 void gb_dcc::loc3_stop_slot()
 { send_2byte_command(loc_nr3,DCC_STOP_CMND);
   // Set slider back to the middle
@@ -255,6 +257,14 @@ void gb_dcc::loc3_slide_slot(int v)
   speed_byte = speed_byte | slide_28_table[v];
   send_2byte_command(loc_nr3,speed_byte);
 } // loc3_slide_slot
+
+void gb_dcc::chn_chkBx_slot()
+{
+    chn0 = ui.chkBx_Chn0.value;
+    chn1 = ui.chkBx_Chn1.value;
+    chn2 = ui.chkBx_Chn2.value;
+    chn3 = ui.chkBx_Chn3.value;
+}
 
 //
 // Send 2 byte command 

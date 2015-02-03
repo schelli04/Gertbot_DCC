@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>612</width>
-    <height>343</height>
+    <width>904</width>
+    <height>341</height>
    </rect>
   </property>
   <property name="font">
@@ -695,14 +695,54 @@
      </rect>
     </property>
    </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>10</y>
+      <width>81</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <item>
+      <widget class="QCheckBox" name="chkBx_Chn0">
+       <property name="text">
+        <string>Channel 1</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="chkBx_Chn1">
+       <property name="text">
+        <string>Channel 2</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="chkBx_Chn2">
+       <property name="text">
+        <string>Channel 3</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="chkBx_Chn3">
+       <property name="text">
+        <string>Channel 4</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>612</width>
-     <height>24</height>
+     <width>904</width>
+     <height>21</height>
     </rect>
    </property>
   </widget>
