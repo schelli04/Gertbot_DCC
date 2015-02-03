@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>904</width>
-    <height>341</height>
+    <width>1074</width>
+    <height>651</height>
    </rect>
   </property>
   <property name="font">
@@ -36,8 +36,8 @@
    <widget class="QToolButton" name="pb_pointA">
     <property name="geometry">
      <rect>
-      <x>500</x>
-      <y>10</y>
+      <x>830</x>
+      <y>40</y>
       <width>31</width>
       <height>31</height>
      </rect>
@@ -66,8 +66,8 @@
    <widget class="QToolButton" name="pb_signalA">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>10</y>
+      <x>890</x>
+      <y>40</y>
       <width>21</width>
       <height>31</height>
      </rect>
@@ -96,8 +96,8 @@
    <widget class="QLabel" name="lbl_pointA">
     <property name="geometry">
      <rect>
-      <x>495</x>
-      <y>40</y>
+      <x>825</x>
+      <y>70</y>
       <width>46</width>
       <height>13</height>
      </rect>
@@ -117,8 +117,8 @@
    <widget class="QLabel" name="lbl_pointB">
     <property name="geometry">
      <rect>
-      <x>495</x>
-      <y>90</y>
+      <x>825</x>
+      <y>120</y>
       <width>46</width>
       <height>13</height>
      </rect>
@@ -138,8 +138,8 @@
    <widget class="QToolButton" name="pb_pointB">
     <property name="geometry">
      <rect>
-      <x>500</x>
-      <y>60</y>
+      <x>830</x>
+      <y>90</y>
       <width>31</width>
       <height>31</height>
      </rect>
@@ -168,8 +168,8 @@
    <widget class="QLabel" name="lbl_sigA">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>40</y>
+      <x>880</x>
+      <y>70</y>
       <width>46</width>
       <height>13</height>
      </rect>
@@ -189,8 +189,8 @@
    <widget class="QToolButton" name="pb_signalB">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>60</y>
+      <x>890</x>
+      <y>90</y>
       <width>21</width>
       <height>31</height>
      </rect>
@@ -219,8 +219,8 @@
    <widget class="QLabel" name="lbl_sigB">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>90</y>
+      <x>880</x>
+      <y>120</y>
       <width>46</width>
       <height>13</height>
      </rect>
@@ -240,8 +240,8 @@
    <widget class="QToolButton" name="pb_pointD">
     <property name="geometry">
      <rect>
-      <x>500</x>
-      <y>160</y>
+      <x>830</x>
+      <y>190</y>
       <width>31</width>
       <height>31</height>
      </rect>
@@ -270,8 +270,8 @@
    <widget class="QLabel" name="lbl_pointC">
     <property name="geometry">
      <rect>
-      <x>495</x>
-      <y>140</y>
+      <x>825</x>
+      <y>170</y>
       <width>46</width>
       <height>13</height>
      </rect>
@@ -291,8 +291,8 @@
    <widget class="QToolButton" name="pb_pointC">
     <property name="geometry">
      <rect>
-      <x>500</x>
-      <y>110</y>
+      <x>830</x>
+      <y>140</y>
       <width>31</width>
       <height>31</height>
      </rect>
@@ -321,8 +321,8 @@
    <widget class="QLabel" name="lbl_pointD">
     <property name="geometry">
      <rect>
-      <x>495</x>
-      <y>190</y>
+      <x>825</x>
+      <y>220</y>
       <width>46</width>
       <height>13</height>
      </rect>
@@ -342,8 +342,8 @@
    <widget class="QLabel" name="lbl_sigA_2">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>140</y>
+      <x>880</x>
+      <y>170</y>
       <width>46</width>
       <height>13</height>
      </rect>
@@ -363,8 +363,8 @@
    <widget class="QToolButton" name="pb_signalC">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>110</y>
+      <x>890</x>
+      <y>140</y>
       <width>21</width>
       <height>31</height>
      </rect>
@@ -393,8 +393,8 @@
    <widget class="QToolButton" name="pb_signalD">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>160</y>
+      <x>890</x>
+      <y>190</y>
       <width>21</width>
       <height>31</height>
      </rect>
@@ -423,8 +423,8 @@
    <widget class="QLabel" name="lbl_sigB_2">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>190</y>
+      <x>880</x>
+      <y>220</y>
       <width>46</width>
       <height>13</height>
      </rect>
@@ -441,297 +441,629 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QWidget" name="verticalLayoutWidget_4">
+   <widget class="QWidget" name="verticalLayoutWidget_3">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>184</width>
-      <height>281</height>
+      <width>801</width>
+      <height>431</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout_4">
+    <layout class="QVBoxLayout" name="verticalLayout_7" stretch="1,4">
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
+      <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,2,5">
        <item>
-        <layout class="QVBoxLayout" name="verticalLayout">
+        <layout class="QVBoxLayout" name="verticalLayout_5">
          <item>
-          <widget class="QSpinBox" name="spB_loco1">
-           <property name="minimum">
-            <number>1</number>
+          <widget class="QGroupBox" name="groupBox_2">
+           <property name="title">
+            <string>Fahrkanäle</string>
            </property>
-           <property name="value">
-            <number>1</number>
-           </property>
-          </widget>
-         </item>
-         <item alignment="Qt::AlignHCenter">
-          <widget class="QSlider" name="sld_loc1">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="layoutDirection">
-            <enum>Qt::LeftToRight</enum>
-           </property>
-           <property name="minimum">
-            <number>-30</number>
-           </property>
-           <property name="maximum">
-            <number>30</number>
-           </property>
-           <property name="pageStep">
-            <number>1</number>
-           </property>
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="tickPosition">
-            <enum>QSlider::TicksAbove</enum>
-           </property>
-           <property name="tickInterval">
-            <number>10</number>
-           </property>
-          </widget>
-         </item>
-         <item alignment="Qt::AlignHCenter">
-          <widget class="QToolButton" name="pb_Stop_loc1">
-           <property name="text">
-            <string>...</string>
-           </property>
-           <property name="icon">
-            <iconset resource="gb_dcc.qrc">
-             <normaloff>:/gb_dcc/Resources/stop.bmp</normaloff>:/gb_dcc/Resources/stop.bmp</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>23</width>
-             <height>23</height>
-            </size>
-           </property>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="1" column="0">
+             <widget class="QCheckBox" name="chkBx_Chn1">
+              <property name="text">
+               <string>Channel 2</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QCheckBox" name="chkBx_Chn0">
+              <property name="text">
+               <string>Channel 1</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QCheckBox" name="chkBx_Chn2">
+              <property name="text">
+               <string>Channel 3</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QCheckBox" name="chkBx_Chn3">
+              <property name="text">
+               <string>Channel 4</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
           </widget>
          </item>
         </layout>
        </item>
        <item>
-        <layout class="QVBoxLayout" name="verticalLayout_2">
+        <layout class="QVBoxLayout" name="verticalLayout_6">
          <item>
-          <widget class="QSpinBox" name="spB_loco2">
-           <property name="minimum">
-            <number>1</number>
+          <widget class="QGroupBox" name="groupBox">
+           <property name="title">
+            <string>Programmierung</string>
            </property>
-           <property name="value">
-            <number>2</number>
-           </property>
-          </widget>
-         </item>
-         <item alignment="Qt::AlignHCenter">
-          <widget class="QSlider" name="sld_loc2">
-           <property name="toolTip">
-            <string>Loc=02</string>
-           </property>
-           <property name="minimum">
-            <number>-30</number>
-           </property>
-           <property name="maximum">
-            <number>30</number>
-           </property>
-           <property name="pageStep">
-            <number>1</number>
-           </property>
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="tickPosition">
-            <enum>QSlider::TicksAbove</enum>
-           </property>
-           <property name="tickInterval">
-            <number>10</number>
-           </property>
-          </widget>
-         </item>
-         <item alignment="Qt::AlignHCenter">
-          <widget class="QToolButton" name="pb_Stop_loc2">
-           <property name="text">
-            <string>...</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normalon>:/gb_dcc/Resources/stop.bmp</normalon>
-            </iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>23</width>
-             <height>23</height>
-            </size>
-           </property>
+           <layout class="QFormLayout" name="formLayout">
+            <property name="fieldGrowthPolicy">
+             <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+            </property>
+            <item row="0" column="1">
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>Programmierkanal:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>Lokadresse:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="6" column="1">
+             <widget class="QPushButton" name="pushButton">
+              <property name="text">
+               <string>OK</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <spacer name="horizontalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="spnBx_Chn_PT">
+                <property name="maximum">
+                 <number>3</number>
+                </property>
+                <property name="value">
+                 <number>3</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="3" column="1">
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <item>
+               <spacer name="horizontalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="spnBx_loco_PT">
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
           </widget>
          </item>
         </layout>
        </item>
        <item>
-        <layout class="QVBoxLayout" name="verticalLayout_3">
-         <item>
-          <widget class="QSpinBox" name="spB_loco3">
-           <property name="minimum">
-            <number>1</number>
-           </property>
-           <property name="value">
-            <number>3</number>
-           </property>
-          </widget>
-         </item>
-         <item alignment="Qt::AlignHCenter">
-          <widget class="QSlider" name="sld_loc3">
-           <property name="toolTip">
-            <string>Loc=08</string>
-           </property>
-           <property name="minimum">
-            <number>-30</number>
-           </property>
-           <property name="maximum">
-            <number>30</number>
-           </property>
-           <property name="pageStep">
-            <number>1</number>
-           </property>
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="tickPosition">
-            <enum>QSlider::TicksAbove</enum>
-           </property>
-           <property name="tickInterval">
-            <number>10</number>
-           </property>
-          </widget>
-         </item>
-         <item alignment="Qt::AlignHCenter">
-          <widget class="QToolButton" name="pb_Stop_loc3">
-           <property name="text">
-            <string>...</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normalon>:/gb_dcc/Resources/stop.bmp</normalon>
-            </iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>23</width>
-             <height>23</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-        </layout>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
        </item>
       </layout>
      </item>
-     <item alignment="Qt::AlignHCenter">
-      <widget class="QToolButton" name="pb_stop_all">
-       <property name="palette">
-        <palette>
-         <active>
-          <colorrole role="ButtonText">
-           <brush brushstyle="SolidPattern">
-            <color alpha="255">
-             <red>255</red>
-             <green>0</green>
-             <blue>0</blue>
-            </color>
-           </brush>
-          </colorrole>
-         </active>
-         <inactive>
-          <colorrole role="ButtonText">
-           <brush brushstyle="SolidPattern">
-            <color alpha="255">
-             <red>255</red>
-             <green>0</green>
-             <blue>0</blue>
-            </color>
-           </brush>
-          </colorrole>
-         </inactive>
-         <disabled>
-          <colorrole role="ButtonText">
-           <brush brushstyle="SolidPattern">
-            <color alpha="255">
-             <red>106</red>
-             <green>104</green>
-             <blue>100</blue>
-            </color>
-           </brush>
-          </colorrole>
-         </disabled>
-        </palette>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Stop All Trains</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QPlainTextEdit" name="te_log">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>10</y>
-      <width>261</width>
-      <height>221</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QWidget" name="verticalLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>600</x>
-      <y>10</y>
-      <width>81</width>
-      <height>221</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_5">
      <item>
-      <widget class="QCheckBox" name="chkBx_Chn0">
-       <property name="text">
-        <string>Channel 1</string>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>19</number>
        </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="chkBx_Chn1">
-       <property name="text">
-        <string>Channel 2</string>
+       <property name="sizeConstraint">
+        <enum>QLayout::SetMaximumSize</enum>
        </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="chkBx_Chn2">
-       <property name="text">
-        <string>Channel 3</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="chkBx_Chn3">
-       <property name="text">
-        <string>Channel 4</string>
-       </property>
-      </widget>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <layout class="QVBoxLayout" name="vL_loc1">
+             <item>
+              <widget class="QSpinBox" name="spB_loco1">
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="value">
+                <number>1</number>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignHCenter">
+              <widget class="QSlider" name="sld_loc1">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="minimum">
+                <number>-30</number>
+               </property>
+               <property name="maximum">
+                <number>30</number>
+               </property>
+               <property name="pageStep">
+                <number>1</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="tickPosition">
+                <enum>QSlider::TicksAbove</enum>
+               </property>
+               <property name="tickInterval">
+                <number>10</number>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignHCenter">
+              <widget class="QToolButton" name="pb_Stop_loc1">
+               <property name="text">
+                <string>...</string>
+               </property>
+               <property name="icon">
+                <iconset resource="gb_dcc.qrc">
+                 <normaloff>:/gb_dcc/Resources/stop.bmp</normaloff>:/gb_dcc/Resources/stop.bmp</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>23</width>
+                 <height>23</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="1" column="1">
+              <widget class="QToolButton" name="toolButton_4">
+               <property name="text">
+                <string>FN0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QToolButton" name="toolButton_3">
+               <property name="text">
+                <string>FN0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QToolButton" name="toolButton">
+               <property name="text">
+                <string>FN0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QToolButton" name="toolButton_2">
+               <property name="text">
+                <string>FN0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QToolButton" name="toolButton_5">
+               <property name="text">
+                <string>FN0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QToolButton" name="toolButton_6">
+               <property name="text">
+                <string>FN0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="Line" name="line">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <widget class="QSpinBox" name="spB_loco2">
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="value">
+                <number>2</number>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignHCenter">
+              <widget class="QSlider" name="sld_loc2">
+               <property name="toolTip">
+                <string>Loc=02</string>
+               </property>
+               <property name="minimum">
+                <number>-30</number>
+               </property>
+               <property name="maximum">
+                <number>30</number>
+               </property>
+               <property name="pageStep">
+                <number>1</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="tickPosition">
+                <enum>QSlider::TicksAbove</enum>
+               </property>
+               <property name="tickInterval">
+                <number>10</number>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignHCenter">
+              <widget class="QToolButton" name="pb_Stop_loc2">
+               <property name="text">
+                <string>...</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normalon>:/gb_dcc/Resources/stop.bmp</normalon>
+                </iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>23</width>
+                 <height>23</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QGridLayout" name="gridLayout_3">
+             <item row="1" column="1">
+              <widget class="QToolButton" name="toolButton_7">
+               <property name="text">
+                <string>FN0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QToolButton" name="toolButton_8">
+               <property name="text">
+                <string>FN0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QToolButton" name="toolButton_9">
+               <property name="text">
+                <string>FN0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QToolButton" name="toolButton_10">
+               <property name="text">
+                <string>FN0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QToolButton" name="toolButton_11">
+               <property name="text">
+                <string>FN0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QToolButton" name="toolButton_12">
+               <property name="text">
+                <string>FN0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="Line" name="line_2">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <widget class="QSpinBox" name="spB_loco3">
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="value">
+                <number>3</number>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignHCenter">
+              <widget class="QSlider" name="sld_loc3">
+               <property name="toolTip">
+                <string>Loc=08</string>
+               </property>
+               <property name="minimum">
+                <number>-30</number>
+               </property>
+               <property name="maximum">
+                <number>30</number>
+               </property>
+               <property name="pageStep">
+                <number>1</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="tickPosition">
+                <enum>QSlider::TicksAbove</enum>
+               </property>
+               <property name="tickInterval">
+                <number>10</number>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignHCenter">
+              <widget class="QToolButton" name="pb_Stop_loc3">
+               <property name="text">
+                <string>...</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normalon>:/gb_dcc/Resources/stop.bmp</normalon>
+                </iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>23</width>
+                 <height>23</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QGridLayout" name="gridLayout_4">
+             <item row="1" column="1">
+              <widget class="QToolButton" name="toolButton_13">
+               <property name="text">
+                <string>FN0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QToolButton" name="toolButton_14">
+               <property name="text">
+                <string>FN0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QToolButton" name="toolButton_15">
+               <property name="text">
+                <string>FN0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QToolButton" name="toolButton_16">
+               <property name="text">
+                <string>FN0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QToolButton" name="toolButton_17">
+               <property name="text">
+                <string>FN0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QToolButton" name="toolButton_18">
+               <property name="text">
+                <string>FN0</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QToolButton" name="pb_stop_all">
+           <property name="palette">
+            <palette>
+             <active>
+              <colorrole role="ButtonText">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>255</red>
+                 <green>0</green>
+                 <blue>0</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="ButtonText">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>255</red>
+                 <green>0</green>
+                 <blue>0</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="ButtonText">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>106</red>
+                 <green>104</green>
+                 <blue>100</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Stop All Trains</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPlainTextEdit" name="te_log"/>
+       </item>
+      </layout>
      </item>
     </layout>
    </widget>
@@ -741,7 +1073,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>904</width>
+     <width>1074</width>
      <height>21</height>
     </rect>
    </property>
