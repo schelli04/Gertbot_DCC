@@ -83,9 +83,9 @@ gb_dcc::gb_dcc(QWidget *parent, Qt::WFlags flags)
   connect(ui.pb_Stop_loc2 ,SIGNAL(clicked(bool)), this, SLOT(loc2_stop_slot()));
   connect(ui.pb_Stop_loc3 ,SIGNAL(clicked(bool)), this, SLOT(loc3_stop_slot()));
   
-  connect(ui.spB_loco1 ,SIGNAL(valueChanged(int)), this, SLOT(loc1_spB_slot(int)));
-  connect(ui.spB_loco2 ,SIGNAL(valueChanged(int)), this, SLOT(loc2_spB_slot(int)));
-  connect(ui.spB_loco3 ,SIGNAL(valueChanged(int)), this, SLOT(loc3_spB_slot(int)));
+  connect(ui.spB_loco1 ,SIGNAL(valueChanged(int)), this, SLOT(loc1_spB_slot(char)));
+  connect(ui.spB_loco2 ,SIGNAL(valueChanged(int)), this, SLOT(loc2_spB_slot(char)));
+  connect(ui.spB_loco3 ,SIGNAL(valueChanged(int)), this, SLOT(loc3_spB_slot(char)));
   
   // connect(ui.chkBx_Chn0, SIGNAL(valueChanged()), this, SLOT(chn_chkBx_slot()));
   // connect(ui.chkBx_Chn1, SIGNAL(valueChanged()), this, SLOT(chn_chkBx_slot()));
