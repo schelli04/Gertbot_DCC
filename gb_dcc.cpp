@@ -272,6 +272,7 @@ void gb_dcc::chn_chkBx_slot()
 //
 void gb_dcc::send_2byte_command(unsigned char b1,unsigned char b2)
 { unsigned char message[10];
+  std::string str_1;
   message[0] = CMD_START_VAL;// Start of Message, comes from gertbot_defines.h
   message[1] = CMD_DCC_MESS; // comes from gertbot_defines.h
   message[2] = 0;            // Assuming only one board (0) connected 
@@ -286,7 +287,8 @@ void gb_dcc::send_2byte_command(unsigned char b1,unsigned char b2)
   message[9] = CMD_STOP_VAL; // End of Message, comes from gertbot_defines.h 
   // Send message out
   write_uart(message,10);
-  // ui.te_log->appendPlainText(message);
+  str_1 = "Hallo";
+  ui.te_log->appendPlainText(str_1);
 } // send_2byte_command
 
 //
