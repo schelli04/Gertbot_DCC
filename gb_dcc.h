@@ -58,7 +58,7 @@ public slots:
   void loc1_stop_slot();
   void loc2_stop_slot();
   void loc3_stop_slot();
-  // void chn_chkBx_slot();
+  void chn_chkBx_slot();
   void pointA_slot(bool down);
   void pointB_slot(bool down);
   void pointC_slot(bool down);
