@@ -692,7 +692,7 @@
              <item row="1" column="1">
               <widget class="QToolButton" name="toolButton_4">
                <property name="text">
-                <string>FN0</string>
+                <string>FN3</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -702,7 +702,7 @@
              <item row="1" column="0">
               <widget class="QToolButton" name="toolButton_3">
                <property name="text">
-                <string>FN0</string>
+                <string>FN2</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -722,7 +722,7 @@
              <item row="0" column="1">
               <widget class="QToolButton" name="toolButton_2">
                <property name="text">
-                <string>FN0</string>
+                <string>FN1</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -732,7 +732,7 @@
              <item row="2" column="0">
               <widget class="QToolButton" name="toolButton_5">
                <property name="text">
-                <string>FN0</string>
+                <string>FN4</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -742,7 +742,7 @@
              <item row="2" column="1">
               <widget class="QToolButton" name="toolButton_6">
                <property name="text">
-                <string>FN0</string>
+                <string>FN5</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -1074,7 +1074,7 @@
      <x>0</x>
      <y>0</y>
      <width>1074</width>
-     <height>21</height>
+     <height>27</height>
     </rect>
    </property>
   </widget>
