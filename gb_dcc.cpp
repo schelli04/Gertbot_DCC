@@ -258,13 +258,13 @@ void gb_dcc::loc3_slide_slot(int v)
   send_2byte_command(loc_nr3,speed_byte);
 } // loc3_slide_slot
 
-// void gb_dcc::chn_chkBx_slot()
-// {
-//    chn0 = ui.chkBx_Chn0.value;
-//    chn1 = ui.chkBx_Chn1.value;
-//    chn2 = ui.chkBx_Chn2.value;
-//    chn3 = ui.chkBx_Chn3.value;
-// }
+void gb_dcc::chn_chkBx_slot()
+{
+    chn0 = ui.chkBx_Chn0.checked;
+    chn1 = ui.chkBx_Chn1.checked;
+    chn2 = ui.chkBx_Chn2.checked;
+    chn3 = ui.chkBx_Chn3.checked;
+}
 
 //
 // Send 2 byte command 
