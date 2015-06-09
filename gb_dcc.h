@@ -1,5 +1,4 @@
 
-
 #ifndef QT_DCC_H
 #define QT_DCC_H
 

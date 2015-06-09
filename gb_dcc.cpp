@@ -260,7 +260,7 @@ void gb_dcc::loc3_slide_slot(int v)
 
 void gb_dcc::chn_chkBx_slot()
 {
-    chn0 = ui->chkBx_Chn0->isChecked();
+    chn0 = ui.chkBx_Chn0->isChecked();
    // chn1 = ui.chkBx_Chn1.checked;
    // chn2 = ui.chkBx_Chn2.checked;
    // chn3 = ui.chkBx_Chn3.checked;

@@ -2,7 +2,12 @@
 # QT interface to Gertbot runnign as DCC controller
 #
 
-CONFIG += qt debug thread
+QT       += core gui
+
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
+
+# CONFIG += qt debug thread
 TEMPLATE = app
 INCLUDEPATH +=  .
 
