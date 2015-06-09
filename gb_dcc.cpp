@@ -20,7 +20,7 @@ bool uart_opened;
 
 bool chn0 = true, chn1 = true, chn2 = true, chn3 = true;
 
-unsigned int loc_nr1 = 1, loc_nr2 = 2, loc_nr3 = 3;
+unsigned char loc_nr1 = 1, loc_nr2 = 2, loc_nr3 = 3;
 
 gb_dcc::gb_dcc(QWidget *parent, Qt::WFlags flags)
     : QMainWindow(parent, flags)
