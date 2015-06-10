@@ -288,6 +288,15 @@ void gb_dcc::send_2byte_command(unsigned char b1,unsigned char b2)
   // Send message out
   write_uart(message,10);
   str_1.append(message[0]);
+  str_1.append(message[1]);
+  str_1.append(message[2]);
+  str_1.append(message[3]);
+  str_1.append(message[4]);
+  str_1.append(message[5]);
+  str_1.append(message[6]);
+  str_1.append(message[7]);
+  str_1.append(message[8]);
+  str_1.append(message[9]);
   ui.te_log->appendPlainText(str_1);
 } // send_2byte_command
 
