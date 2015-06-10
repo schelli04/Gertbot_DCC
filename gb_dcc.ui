@@ -696,7 +696,7 @@
            <item>
             <layout class="QGridLayout" name="gridLayout_2">
              <item row="1" column="1">
-              <widget class="QToolButton" name="toolButton_4">
+              <widget class="QToolButton" name="Btn_loc1_fn3">
                <property name="text">
                 <string>FN3</string>
                </property>
@@ -706,7 +706,7 @@
               </widget>
              </item>
              <item row="1" column="0">
-              <widget class="QToolButton" name="toolButton_3">
+              <widget class="QToolButton" name="Btn_loc1_fn2">
                <property name="text">
                 <string>FN2</string>
                </property>
@@ -716,7 +716,7 @@
               </widget>
              </item>
              <item row="0" column="0">
-              <widget class="QToolButton" name="toolButton">
+              <widget class="QToolButton" name="Btn_loc1_fn0">
                <property name="text">
                 <string>FN0</string>
                </property>
@@ -726,7 +726,7 @@
               </widget>
              </item>
              <item row="0" column="1">
-              <widget class="QToolButton" name="toolButton_2">
+              <widget class="QToolButton" name="Btn_loc1_fn1">
                <property name="text">
                 <string>FN1</string>
                </property>
@@ -736,7 +736,7 @@
               </widget>
              </item>
              <item row="2" column="0">
-              <widget class="QToolButton" name="toolButton_5">
+              <widget class="QToolButton" name="Btn_loc1_fn4">
                <property name="text">
                 <string>FN4</string>
                </property>
@@ -746,7 +746,7 @@
               </widget>
              </item>
              <item row="2" column="1">
-              <widget class="QToolButton" name="toolButton_6">
+              <widget class="QToolButton" name="Btn_loc1_fn5">
                <property name="text">
                 <string>FN5</string>
                </property>
@@ -824,9 +824,9 @@
            <item>
             <layout class="QGridLayout" name="gridLayout_3">
              <item row="1" column="1">
-              <widget class="QToolButton" name="toolButton_7">
+              <widget class="QToolButton" name="Btn_loc2_fn3">
                <property name="text">
-                <string>FN0</string>
+                <string>FN3</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -834,9 +834,9 @@
               </widget>
              </item>
              <item row="1" column="0">
-              <widget class="QToolButton" name="toolButton_8">
+              <widget class="QToolButton" name="Btn_loc2_fn2">
                <property name="text">
-                <string>FN0</string>
+                <string>FN2</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -844,7 +844,7 @@
               </widget>
              </item>
              <item row="0" column="0">
-              <widget class="QToolButton" name="toolButton_9">
+              <widget class="QToolButton" name="Btn_loc2_fn0">
                <property name="text">
                 <string>FN0</string>
                </property>
@@ -854,9 +854,9 @@
               </widget>
              </item>
              <item row="0" column="1">
-              <widget class="QToolButton" name="toolButton_10">
+              <widget class="QToolButton" name="Btn_loc2_fn1">
                <property name="text">
-                <string>FN0</string>
+                <string>FN1</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -864,9 +864,9 @@
               </widget>
              </item>
              <item row="2" column="0">
-              <widget class="QToolButton" name="toolButton_11">
+              <widget class="QToolButton" name="Btn_loc2_fn4">
                <property name="text">
-                <string>FN0</string>
+                <string>FN4</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -874,9 +874,9 @@
               </widget>
              </item>
              <item row="2" column="1">
-              <widget class="QToolButton" name="toolButton_12">
+              <widget class="QToolButton" name="Btn_loc2_fn5">
                <property name="text">
-                <string>FN0</string>
+                <string>FN5</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -952,9 +952,9 @@
            <item>
             <layout class="QGridLayout" name="gridLayout_4">
              <item row="1" column="1">
-              <widget class="QToolButton" name="toolButton_13">
+              <widget class="QToolButton" name="Btn_loc3_fn3">
                <property name="text">
-                <string>FN0</string>
+                <string>FN3</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -962,9 +962,9 @@
               </widget>
              </item>
              <item row="1" column="0">
-              <widget class="QToolButton" name="toolButton_14">
+              <widget class="QToolButton" name="Btn_loc3_fn2">
                <property name="text">
-                <string>FN0</string>
+                <string>FN2</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -972,7 +972,7 @@
               </widget>
              </item>
              <item row="0" column="0">
-              <widget class="QToolButton" name="toolButton_15">
+              <widget class="QToolButton" name="Btn_loc3_fn0">
                <property name="text">
                 <string>FN0</string>
                </property>
@@ -982,9 +982,9 @@
               </widget>
              </item>
              <item row="0" column="1">
-              <widget class="QToolButton" name="toolButton_16">
+              <widget class="QToolButton" name="Btn_loc3_fn1">
                <property name="text">
-                <string>FN0</string>
+                <string>FN1</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -992,9 +992,9 @@
               </widget>
              </item>
              <item row="2" column="0">
-              <widget class="QToolButton" name="toolButton_17">
+              <widget class="QToolButton" name="Btn_loc3_fn4">
                <property name="text">
-                <string>FN0</string>
+                <string>FN4</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -1002,9 +1002,9 @@
               </widget>
              </item>
              <item row="2" column="1">
-              <widget class="QToolButton" name="toolButton_18">
+              <widget class="QToolButton" name="Btn_loc3_fn5">
                <property name="text">
-                <string>FN0</string>
+                <string>FN5</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>

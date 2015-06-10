@@ -106,6 +106,8 @@ gb_dcc::gb_dcc(QWidget *parent, Qt::WFlags flags)
   connect(ui.pb_signalC ,SIGNAL(toggled(bool)), this, SLOT(sigC_slot(bool)));
   connect(ui.pb_signalD ,SIGNAL(toggled(bool)), this, SLOT(sigD_slot(bool)));
 
+  connect(ui.Btn_loc1_fn0 , SIGNAL(toggled(bool)), this, SLOT(loc1_fn_slot()));
+
   connect(ui.pb_stop_all,SIGNAL(clicked(bool)), this, SLOT(stop_all_slot()));
 
   // 'cute' trains as slider handle
@@ -171,6 +173,19 @@ void gb_dcc::loc3_stop_slot()
   // Set slider back to the middle
   ui.sld_loc3->setValue(0);
 } // loc3_stop_slot
+
+void gb_dcc::loc1_fn_slot(){
+    unsigned char cmd;
+    bool fn0, fn1, fn2, fn3, fn4;
+    cmd = 0x80;
+    fn0 = ui.Btn_loc1_fn0->isChecked();
+    if( fn0 )
+        cmd = cmd | 0x01;
+    else
+        cmd = cmd | 0x00;
+
+    send_2byte_command(loc_nr1,cmd);
+}
 
 //
 // I use a simple 28 step speed system 
@@ -297,7 +312,7 @@ void gb_dcc::send_2byte_command(unsigned char b1,unsigned char b2)
        << (int)message[i];
 
   str_1 = QString::fromStdString(ss.str());
-  for(int i=0;i<10;i++)
+  for(int i=0;i<9;i++)
     str_1.insert(2+3*i, ":");
   ui.te_log->appendPlainText(str_1);
 } // send_2byte_command
