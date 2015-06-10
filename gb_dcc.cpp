@@ -288,13 +288,16 @@ void gb_dcc::send_2byte_command(unsigned char b1,unsigned char b2)
   message[9] = CMD_STOP_VAL; // End of Message, comes from gertbot_defines.h 
   // Send message out
   write_uart(message,10);
+
   for(int i=0;i<10;++i)
     ss << std::hex
        << std::uppercase
        << std::setw(2)
        << std::setfill('0')
        << (int)message[i];
-  str_1.append(ss.str());
+  std::cout << ss.str();
+
+  //str_1.append(ss.str());
   //str_1.append(std::endl);
 
   ui.te_log->appendPlainText(str_1);

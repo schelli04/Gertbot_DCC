@@ -30,6 +30,7 @@ extern "C" {
 #include <string>   // Strings
 #include <iomanip>  // setw(), setfill()
 #include <sstream>
+#include <iostream>
 
 #include "gertbot_defines.h"
 
