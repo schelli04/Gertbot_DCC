@@ -36,7 +36,7 @@
    <widget class="QToolButton" name="pb_pointA">
     <property name="geometry">
      <rect>
-      <x>830</x>
+      <x>917</x>
       <y>40</y>
       <width>31</width>
       <height>31</height>
@@ -66,7 +66,7 @@
    <widget class="QToolButton" name="pb_signalA">
     <property name="geometry">
      <rect>
-      <x>890</x>
+      <x>970</x>
       <y>40</y>
       <width>21</width>
       <height>31</height>
@@ -96,7 +96,7 @@
    <widget class="QLabel" name="lbl_pointA">
     <property name="geometry">
      <rect>
-      <x>825</x>
+      <x>912</x>
       <y>70</y>
       <width>46</width>
       <height>13</height>
@@ -117,7 +117,7 @@
    <widget class="QLabel" name="lbl_pointB">
     <property name="geometry">
      <rect>
-      <x>825</x>
+      <x>912</x>
       <y>120</y>
       <width>46</width>
       <height>13</height>
@@ -138,7 +138,7 @@
    <widget class="QToolButton" name="pb_pointB">
     <property name="geometry">
      <rect>
-      <x>830</x>
+      <x>917</x>
       <y>90</y>
       <width>31</width>
       <height>31</height>
@@ -168,7 +168,7 @@
    <widget class="QLabel" name="lbl_sigA">
     <property name="geometry">
      <rect>
-      <x>880</x>
+      <x>970</x>
       <y>70</y>
       <width>46</width>
       <height>13</height>
@@ -189,7 +189,7 @@
    <widget class="QToolButton" name="pb_signalB">
     <property name="geometry">
      <rect>
-      <x>890</x>
+      <x>970</x>
       <y>90</y>
       <width>21</width>
       <height>31</height>
@@ -219,7 +219,7 @@
    <widget class="QLabel" name="lbl_sigB">
     <property name="geometry">
      <rect>
-      <x>880</x>
+      <x>970</x>
       <y>120</y>
       <width>46</width>
       <height>13</height>
@@ -240,7 +240,7 @@
    <widget class="QToolButton" name="pb_pointD">
     <property name="geometry">
      <rect>
-      <x>830</x>
+      <x>917</x>
       <y>190</y>
       <width>31</width>
       <height>31</height>
@@ -270,7 +270,7 @@
    <widget class="QLabel" name="lbl_pointC">
     <property name="geometry">
      <rect>
-      <x>825</x>
+      <x>912</x>
       <y>170</y>
       <width>46</width>
       <height>13</height>
@@ -291,7 +291,7 @@
    <widget class="QToolButton" name="pb_pointC">
     <property name="geometry">
      <rect>
-      <x>830</x>
+      <x>917</x>
       <y>140</y>
       <width>31</width>
       <height>31</height>
@@ -321,7 +321,7 @@
    <widget class="QLabel" name="lbl_pointD">
     <property name="geometry">
      <rect>
-      <x>825</x>
+      <x>912</x>
       <y>220</y>
       <width>46</width>
       <height>13</height>
@@ -342,7 +342,7 @@
    <widget class="QLabel" name="lbl_sigA_2">
     <property name="geometry">
      <rect>
-      <x>880</x>
+      <x>970</x>
       <y>170</y>
       <width>46</width>
       <height>13</height>
@@ -363,7 +363,7 @@
    <widget class="QToolButton" name="pb_signalC">
     <property name="geometry">
      <rect>
-      <x>890</x>
+      <x>970</x>
       <y>140</y>
       <width>21</width>
       <height>31</height>
@@ -393,7 +393,7 @@
    <widget class="QToolButton" name="pb_signalD">
     <property name="geometry">
      <rect>
-      <x>890</x>
+      <x>970</x>
       <y>190</y>
       <width>21</width>
       <height>31</height>
@@ -423,7 +423,7 @@
    <widget class="QLabel" name="lbl_sigB_2">
     <property name="geometry">
      <rect>
-      <x>880</x>
+      <x>970</x>
       <y>220</y>
       <width>46</width>
       <height>13</height>
@@ -446,7 +446,7 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>801</width>
+      <width>881</width>
       <height>431</height>
      </rect>
     </property>
@@ -1067,7 +1067,14 @@
         </layout>
        </item>
        <item>
-        <widget class="QPlainTextEdit" name="te_log"/>
+        <widget class="QPlainTextEdit" name="te_log">
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOn</enum>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
        </item>
       </layout>
      </item>
@@ -1080,7 +1087,7 @@
      <x>0</x>
      <y>0</y>
      <width>1074</width>
-     <height>27</height>
+     <height>19</height>
     </rect>
    </property>
   </widget>

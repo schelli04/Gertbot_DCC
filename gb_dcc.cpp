@@ -297,9 +297,6 @@ void gb_dcc::send_2byte_command(unsigned char b1,unsigned char b2)
        << (int)message[i];
 
   str_1 = QString::fromStdString(ss.str());
-  //str_1.append(ss.str());
-  //str_1.append(std::endl);
-
   ui.te_log->appendPlainText(str_1);
 } // send_2byte_command
 
