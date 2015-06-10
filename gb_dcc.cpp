@@ -188,7 +188,11 @@ void gb_dcc::loc1_fn_slot(){
     fn3 = ui.Btn_loc1_fn3->isChecked();
     fn4 = ui.Btn_loc1_fn4->isChecked();
 
-    cmd = fn0 ? cmd | 0x01 : 0x00;
+    cmd = fn0 ? cmd | 0x01 : cmd | 0x00;
+    cmd = fn1 ? cmd | 0x02 : cmd | 0x00;
+    cmd = fn2 ? cmd | 0x04 : cmd | 0x00;
+    cmd = fn3 ? cmd | 0x08 : cmd | 0x00;
+    cmd = fn4 ? cmd | 0x10 : cmd | 0x00;
 
 //    if( fn0 )
 //        cmd = cmd | 0x01;
