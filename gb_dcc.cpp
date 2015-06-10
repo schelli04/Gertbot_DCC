@@ -107,6 +107,10 @@ gb_dcc::gb_dcc(QWidget *parent, Qt::WFlags flags)
   connect(ui.pb_signalD ,SIGNAL(toggled(bool)), this, SLOT(sigD_slot(bool)));
 
   connect(ui.Btn_loc1_fn0 , SIGNAL(toggled(bool)), this, SLOT(loc1_fn_slot()));
+  connect(ui.Btn_loc1_fn1 , SIGNAL(toggled(bool)), this, SLOT(loc1_fn_slot()));
+  connect(ui.Btn_loc1_fn2 , SIGNAL(toggled(bool)), this, SLOT(loc1_fn_slot()));
+  connect(ui.Btn_loc1_fn3 , SIGNAL(toggled(bool)), this, SLOT(loc1_fn_slot()));
+  connect(ui.Btn_loc1_fn4 , SIGNAL(toggled(bool)), this, SLOT(loc1_fn_slot()));
 
   connect(ui.pb_stop_all,SIGNAL(clicked(bool)), this, SLOT(stop_all_slot()));
 
@@ -179,10 +183,17 @@ void gb_dcc::loc1_fn_slot(){
     bool fn0, fn1, fn2, fn3, fn4;
     cmd = 0x80;
     fn0 = ui.Btn_loc1_fn0->isChecked();
-    if( fn0 )
-        cmd = cmd | 0x01;
-    else
-        cmd = cmd | 0x00;
+    fn1 = ui.Btn_loc1_fn1->isChecked();
+    fn2 = ui.Btn_loc1_fn2->isChecked();
+    fn3 = ui.Btn_loc1_fn3->isChecked();
+    fn4 = ui.Btn_loc1_fn4->isChecked();
+
+    cmd = fn0 ? cmd | 0x01 : 0x00;
+
+//    if( fn0 )
+//        cmd = cmd | 0x01;
+//    else
+//        cmd = cmd | 0x00;
 
     send_2byte_command(loc_nr1,cmd);
 }
