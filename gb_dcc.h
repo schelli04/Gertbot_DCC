@@ -27,6 +27,9 @@ extern "C" {
 #include "ui_gb_dcc.h"
 #include <qmessagebox.h>
 #include <stdint.h>
+#include <string>   // Strings
+#include <iomanip>  // setw(), setfill()
+#include <sstream>
 
 #include "gertbot_defines.h"
 
