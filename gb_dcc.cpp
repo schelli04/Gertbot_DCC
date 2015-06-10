@@ -88,9 +88,9 @@ gb_dcc::gb_dcc(QWidget *parent, Qt::WFlags flags)
   connect(ui.spB_loco3 ,SIGNAL(valueChanged(int)), this, SLOT(loc3_spB_slot(char)));
   
   connect(ui.chkBx_Chn0, SIGNAL(valueChanged()), this, SLOT(chn_chkBx_slot()));
-  // connect(ui.chkBx_Chn1, SIGNAL(valueChanged()), this, SLOT(chn_chkBx_slot()));
-  // connect(ui.chkBx_Chn2, SIGNAL(valueChanged()), this, SLOT(chn_chkBx_slot()));
-  // connect(ui.chkBx_Chn3, SIGNAL(valueChanged()), this, SLOT(chn_chkBx_slot()));
+  connect(ui.chkBx_Chn1, SIGNAL(valueChanged()), this, SLOT(chn_chkBx_slot()));
+  connect(ui.chkBx_Chn2, SIGNAL(valueChanged()), this, SLOT(chn_chkBx_slot()));
+  connect(ui.chkBx_Chn3, SIGNAL(valueChanged()), this, SLOT(chn_chkBx_slot()));
   
   connect(ui.sld_loc1,SIGNAL(valueChanged(int)), this, SLOT(loc1_slide_slot(int)));
   connect(ui.sld_loc2,SIGNAL(valueChanged(int)), this, SLOT(loc2_slide_slot(int)));
@@ -273,6 +273,7 @@ void gb_dcc::chn_chkBx_slot()
 void gb_dcc::send_2byte_command(unsigned char b1,unsigned char b2)
 { unsigned char message[10];
   QString str_1;
+  std::string ss;
   message[0] = CMD_START_VAL;// Start of Message, comes from gertbot_defines.h
   message[1] = CMD_DCC_MESS; // comes from gertbot_defines.h
   message[2] = 0;            // Assuming only one board (0) connected 
@@ -287,16 +288,13 @@ void gb_dcc::send_2byte_command(unsigned char b1,unsigned char b2)
   message[9] = CMD_STOP_VAL; // End of Message, comes from gertbot_defines.h 
   // Send message out
   write_uart(message,10);
-  str_1.append(message[0]);
-  str_1.append(message[1]);
-  str_1.append(message[2]);
-  str_1.append(message[3]);
-  str_1.append(message[4]);
-  str_1.append(message[5]);
-  str_1.append(message[6]);
-  str_1.append(message[7]);
-  str_1.append(message[8]);
-  str_1.append(message[9]);
+  for(int i=0;i<10;++i)
+    ss << std::hex
+       << std::uppercase
+       << std::setw(2)
+       << std::setfill('0')
+       << (int)message[i];
+  str_1.append(ss);
   ui.te_log->appendPlainText(str_1);
 } // send_2byte_command
 
