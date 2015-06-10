@@ -87,10 +87,10 @@ gb_dcc::gb_dcc(QWidget *parent, Qt::WFlags flags)
   connect(ui.spB_loco2 ,SIGNAL(valueChanged(int)), this, SLOT(loc2_spB_slot(int)));
   connect(ui.spB_loco3 ,SIGNAL(valueChanged(int)), this, SLOT(loc3_spB_slot(int)));
   
-  connect(ui.chkBx_Chn0, SIGNAL(stateChanged()), this, SLOT(chn_chkBx_slot()));
-  connect(ui.chkBx_Chn1, SIGNAL(stateChanged()), this, SLOT(chn_chkBx_slot()));
-  connect(ui.chkBx_Chn2, SIGNAL(stateChanged()), this, SLOT(chn_chkBx_slot()));
-  connect(ui.chkBx_Chn3, SIGNAL(stateChanged()), this, SLOT(chn_chkBx_slot()));
+  connect(ui.chkBx_Chn0, SIGNAL(stateChanged(int)), this, SLOT(chn_chkBx_slot()));
+  connect(ui.chkBx_Chn1, SIGNAL(stateChanged(int)), this, SLOT(chn_chkBx_slot()));
+  connect(ui.chkBx_Chn2, SIGNAL(stateChanged(int)), this, SLOT(chn_chkBx_slot()));
+  connect(ui.chkBx_Chn3, SIGNAL(stateChanged(int)), this, SLOT(chn_chkBx_slot()));
   
   connect(ui.sld_loc1,SIGNAL(valueChanged(int)), this, SLOT(loc1_slide_slot(int)));
   connect(ui.sld_loc2,SIGNAL(valueChanged(int)), this, SLOT(loc2_slide_slot(int)));
