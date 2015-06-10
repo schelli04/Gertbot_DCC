@@ -261,9 +261,9 @@ void gb_dcc::loc3_slide_slot(int v)
 void gb_dcc::chn_chkBx_slot()
 {
     chn0 = ui.chkBx_Chn0->isChecked();
-   // chn1 = ui.chkBx_Chn1.checked;
-   // chn2 = ui.chkBx_Chn2.checked;
-   // chn3 = ui.chkBx_Chn3.checked;
+    chn1 = ui.chkBx_Chn1->isChecked();
+    chn2 = ui.chkBx_Chn2->isChecked();
+    chn3 = ui.chkBx_Chn3->isChecked();
 }
 
 //
@@ -272,7 +272,7 @@ void gb_dcc::chn_chkBx_slot()
 //
 void gb_dcc::send_2byte_command(unsigned char b1,unsigned char b2)
 { unsigned char message[10];
-  std::string str_1;
+  QString str_1;
   message[0] = CMD_START_VAL;// Start of Message, comes from gertbot_defines.h
   message[1] = CMD_DCC_MESS; // comes from gertbot_defines.h
   message[2] = 0;            // Assuming only one board (0) connected 
@@ -287,7 +287,7 @@ void gb_dcc::send_2byte_command(unsigned char b1,unsigned char b2)
   message[9] = CMD_STOP_VAL; // End of Message, comes from gertbot_defines.h 
   // Send message out
   write_uart(message,10);
-  str_1 = "Hallo";
+  str_1.append(message[0])
   ui.te_log->appendPlainText(str_1);
 } // send_2byte_command
 
