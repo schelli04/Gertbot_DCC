@@ -112,6 +112,18 @@ gb_dcc::gb_dcc(QWidget *parent, Qt::WFlags flags)
   connect(ui.Btn_loc1_fn3 , SIGNAL(toggled(bool)), this, SLOT(loc1_fn_slot()));
   connect(ui.Btn_loc1_fn4 , SIGNAL(toggled(bool)), this, SLOT(loc1_fn_slot()));
 
+  connect(ui.Btn_loc2_fn0 , SIGNAL(toggled(bool)), this, SLOT(loc2_fn_slot()));
+  connect(ui.Btn_loc2_fn1 , SIGNAL(toggled(bool)), this, SLOT(loc2_fn_slot()));
+  connect(ui.Btn_loc2_fn2 , SIGNAL(toggled(bool)), this, SLOT(loc2_fn_slot()));
+  connect(ui.Btn_loc2_fn3 , SIGNAL(toggled(bool)), this, SLOT(loc2_fn_slot()));
+  connect(ui.Btn_loc2_fn4 , SIGNAL(toggled(bool)), this, SLOT(loc2_fn_slot()));
+
+  connect(ui.Btn_loc3_fn0 , SIGNAL(toggled(bool)), this, SLOT(loc3_fn_slot()));
+  connect(ui.Btn_loc3_fn1 , SIGNAL(toggled(bool)), this, SLOT(loc3_fn_slot()));
+  connect(ui.Btn_loc3_fn2 , SIGNAL(toggled(bool)), this, SLOT(loc3_fn_slot()));
+  connect(ui.Btn_loc3_fn3 , SIGNAL(toggled(bool)), this, SLOT(loc3_fn_slot()));
+  connect(ui.Btn_loc3_fn4 , SIGNAL(toggled(bool)), this, SLOT(loc3_fn_slot()));
+
   connect(ui.pb_stop_all,SIGNAL(clicked(bool)), this, SLOT(stop_all_slot()));
 
   // 'cute' trains as slider handle
@@ -194,12 +206,45 @@ void gb_dcc::loc1_fn_slot(){
     cmd = fn3 ? cmd | 0x08 : cmd | 0x00;
     cmd = fn4 ? cmd | 0x10 : cmd | 0x00;
 
-//    if( fn0 )
-//        cmd = cmd | 0x01;
-//    else
-//        cmd = cmd | 0x00;
-
     send_2byte_command(loc_nr1,cmd);
+}
+
+void gb_dcc::loc2_fn_slot(){
+    unsigned char cmd;
+    bool fn0, fn1, fn2, fn3, fn4;
+    cmd = 0x80;
+    fn0 = ui.Btn_loc2_fn0->isChecked();
+    fn1 = ui.Btn_loc2_fn1->isChecked();
+    fn2 = ui.Btn_loc2_fn2->isChecked();
+    fn3 = ui.Btn_loc2_fn3->isChecked();
+    fn4 = ui.Btn_loc2_fn4->isChecked();
+
+    cmd = fn0 ? cmd | 0x01 : cmd | 0x00;
+    cmd = fn1 ? cmd | 0x02 : cmd | 0x00;
+    cmd = fn2 ? cmd | 0x04 : cmd | 0x00;
+    cmd = fn3 ? cmd | 0x08 : cmd | 0x00;
+    cmd = fn4 ? cmd | 0x10 : cmd | 0x00;
+
+    send_2byte_command(loc_nr2,cmd);
+}
+
+void gb_dcc::loc3_fn_slot(){
+    unsigned char cmd;
+    bool fn0, fn1, fn2, fn3, fn4;
+    cmd = 0x80;
+    fn0 = ui.Btn_loc3_fn0->isChecked();
+    fn1 = ui.Btn_loc3_fn1->isChecked();
+    fn2 = ui.Btn_loc3_fn2->isChecked();
+    fn3 = ui.Btn_loc3_fn3->isChecked();
+    fn4 = ui.Btn_loc3_fn4->isChecked();
+
+    cmd = fn0 ? cmd | 0x01 : cmd | 0x00;
+    cmd = fn1 ? cmd | 0x02 : cmd | 0x00;
+    cmd = fn2 ? cmd | 0x04 : cmd | 0x00;
+    cmd = fn3 ? cmd | 0x08 : cmd | 0x00;
+    cmd = fn4 ? cmd | 0x10 : cmd | 0x00;
+
+    send_2byte_command(loc_nr3,cmd);
 }
 
 //

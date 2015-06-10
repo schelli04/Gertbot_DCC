@@ -71,6 +71,8 @@ public slots:
   void sigC_slot(bool down);
   void sigD_slot(bool down);
   void loc1_fn_slot();
+  void loc2_fn_slot();
+  void loc3_fn_slot();
   void stop_all_slot();
 
 };
