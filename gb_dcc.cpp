@@ -295,8 +295,8 @@ void gb_dcc::send_2byte_command(unsigned char b1,unsigned char b2)
        << std::setw(2)
        << std::setfill('0')
        << (int)message[i];
-  std::cout << ss.str();
 
+  str_1.fromStdString(ss.str());
   //str_1.append(ss.str());
   //str_1.append(std::endl);
 
